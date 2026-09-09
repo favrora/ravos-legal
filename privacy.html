@@ -13,35 +13,45 @@
     </header>
     <main>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective September 7, 2026</p>
+      <p class="meta">Effective September 9, 2026</p>
       <p>This policy explains how the Ravos team ("Ravos", "we", or "us") processes information in the Ravos mobile application. Contact us at <a href="mailto:webcoder.ru@gmail.com">webcoder.ru@gmail.com</a>.</p>
 
-      <h2>Information you choose to provide</h2>
-      <p>When you request writing help, you may provide conversation text, a draft, profile details, bio facts, and optional examples of your writing style. Ravos sends the text you reviewed to our protected backend and AI processor only when you tap Generate. Do not submit information you do not have permission to process.</p>
+      <h2>Information you choose to provide and how we collect it</h2>
+      <p>Ravos collects information only when you enter it, select it, or ask the app to perform a feature. For AI writing help, this can include conversation messages, a draft, profile or bio facts, and up to three optional examples of your writing style in My Voice. The request also includes your selected writing mode, language, tone, length, emoji preference, humor level, and directness level. Do not submit information you do not have permission to process.</p>
 
       <h2>Screenshots and local OCR</h2>
       <p>Selected screenshots are processed on your device to recognize text. Ravos does not upload screenshot image files in version 1. Extracted text is editable, roles can be reviewed, and common personal information can be redacted before an AI request.</p>
 
-      <h2>Account, purchase, and technical data</h2>
-      <p>Ravos uses a pseudonymous Firebase identifier for authentication and quotas. You can continue as a guest. If you choose Login with email for an existing account, Firebase processes your email address and password to authenticate you; Ravos does not save your password on the device. The app does not offer account registration. Apple, Google, and RevenueCat may process store account, purchase, subscription, device, and diagnostic information under their own terms. Our service may process privacy-safe operational data such as request ID, app version, response status, latency bucket, and usage counts. We do not use message text for advertising.</p>
+      <h2>AI processing and explicit permission</h2>
+      <p>Before the main app becomes available, Ravos identifies the data listed above, identifies Google LLC's Gemini AI as the recipient, explains that the sole purpose is to create writing suggestions, and asks for your explicit permission. If you choose <strong>Not now</strong>, nothing is sent and the AI-powered core app remains locked. If you choose <strong>Allow and continue</strong>, Ravos may send only the reviewed text and preferences described above through our authenticated HTTPS backend hosted on Google Cloud, and the backend sends them to the Gemini Developer API solely when you request a suggestion.</p>
+      <p>Google Gemini does not receive the screenshot image file, your email address, your Firebase user ID, or your App Store or Google Play purchase record as part of the generation prompt. Ravos does not allow Gemini prompts or responses to be contributed for general model improvement. Under Google's terms for paid Gemini API services, prompts and responses are not used to improve Google's products; Google may retain them for up to 55 days solely for abuse monitoring and required legal or regulatory disclosures.</p>
 
-      <h2>Purposes and processors</h2>
-      <p>We process data to provide AI suggestions, protect the service, enforce limits, verify subscriptions, respond to support, and diagnose failures. Service providers may include Apple, Google Firebase and Google Cloud/Gemini, RevenueCat, and hosting infrastructure configured for Ravos.</p>
+      <h2>Account, purchase, and technical data</h2>
+      <p>Ravos automatically receives a pseudonymous Firebase user identifier and App Check attestation data to authenticate the app, prevent abuse, enforce generation quotas, and isolate account data. You can continue as a guest. If you choose Login with email for an existing account, you provide an email address and password directly to Google Firebase Authentication; Ravos stores an encrypted refresh token in the device's secure storage but does not store your password. The app does not offer account registration.</p>
+      <p>Apple, Google Play, and RevenueCat process purchase and subscription records so Ravos can display products, complete purchases, restore access, and enforce the correct allowance. Our service also processes product interactions and privacy-safe operational data such as request ID, app version, response status, latency bucket, model or prompt version, quota tier, and count buckets to operate, secure, and diagnose the service. Operational logs do not include message text, screenshots, generated replies, names, bios, or My Voice examples.</p>
+
+      <h2>Purposes, service providers, and protection</h2>
+      <p>We process data only to provide AI suggestions, authenticate existing accounts, protect the service, enforce limits, verify subscriptions, respond to support, review confirmed safety reports, and diagnose failures. Our service providers are Google LLC (Firebase Authentication, App Check, Google Cloud, Firestore, and the Gemini Developer API), RevenueCat, Inc. (subscription status), Apple Inc. (App Store purchases), and Google LLC (Google Play purchases on Android). Their processing is limited to providing these functions or meeting legal and security obligations; we do not sell personal data or use it for advertising or cross-company tracking.</p>
+      <p>We require every service provider with access to Ravos user data to apply the same or equal protection described in this policy and required by the App Store Review Guidelines. We review provider terms and security controls and stop sharing data with a provider if it cannot provide that protection. Providers may process information in countries other than your own under their applicable data-protection terms.</p>
 
       <h2>Storage and retention</h2>
-      <p>Saved chats, generated suggestions, voice examples, and preferences are stored locally until you delete them or remove the app. Server-side idempotency records are short lived, entitlement cache is temporary, and privacy-safe webhook metadata may be retained for up to 90 days. Legal, fraud-prevention, and security records may be kept longer where required.</p>
+      <p>Saved chats, generated suggestions, My Voice examples, and preferences are stored locally until you delete them or remove the app. Ravos does not store generation input text on its backend. A generated result is cached for up to 10 minutes only to prevent a retried request from using quota twice. Pseudonymous quota and entitlement records are retained while needed to provide access and prevent abuse. Privacy-safe subscription webhook metadata may be retained for up to 90 days. Google may retain Gemini prompts and responses for up to 55 days for abuse monitoring as described above. Legal, fraud-prevention, and security records may be kept longer where required.</p>
 
       <h2>Reports about AI-generated content</h2>
       <p>On Android, you can report an AI answer without leaving Ravos. After you confirm, we receive the three original generated suggestions, your selected reason, generation and report identifiers, writing mode, app version, and a pseudonymous reporter identifier. A report does not attach your input chat, screenshot files, writing examples, or edited draft. Generated text may itself repeat details you provided. We use reports to review safety issues and improve safeguards, not for advertising. Reports are scheduled for deletion after 90 days, unless a longer period is required for a legal or security investigation. Contact support to request earlier deletion.</p>
 
       <h2>Your choices</h2>
-      <p>You can decline AI processing, edit or redact text, avoid saving a chat, disable reminders, delete local data in Profile, or request deletion of server-side data. See <a href="support.html#delete-data">Request deletion of Ravos data</a> for the steps, data covered, and retention exceptions. Deleting local data or a Ravos account does not cancel an Apple or Google subscription; subscriptions are managed through the relevant store account.</p>
+      <p>You can decline the AI disclosure, edit or redact text, avoid saving a chat, or disable reminders. After granting AI permission, use <strong>Profile &gt; Privacy and data &gt; AI data sharing permission</strong> to withdraw it. Ravos immediately returns to the required permission screen and blocks both the core app and further AI transmission until you grant permission again. You can also use Profile &gt; Delete local data to remove chats, My Voice examples, preferences, and the saved permission from this device.</p>
+      <p>To request deletion of server-side data, see <a href="support.html#delete-data">Request deletion of Ravos data</a> for the steps, data covered, and retention exceptions. Deleting local data or Ravos server data does not cancel an Apple or Google subscription; subscriptions are managed through the relevant store account.</p>
 
       <h2>Age and safety</h2>
       <p>Ravos is for adults aged 18 or older and is not intended for minors. We may block requests involving minors, coercion, harassment, threats, stalking, or sexual exploitation.</p>
 
-      <h2>International processing and security</h2>
-      <p>Processors may handle information in countries other than your own. We use HTTPS, authenticated access, App Check, validation, quotas, and data minimization, but no system can guarantee absolute security.</p>
+      <h2>Security</h2>
+      <p>We use HTTPS, authenticated access, App Check, validation, rate limits, data minimization, short-lived caches, and restricted service credentials. No system can guarantee absolute security.</p>
+
+      <h2>Provider information</h2>
+      <p>Provider practices are described in <a href="https://ai.google.dev/gemini-api/terms">Gemini API Terms</a>, <a href="https://ai.google.dev/gemini-api/docs/usage-policies">Gemini abuse monitoring</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://www.revenuecat.com/privacy/">RevenueCat Privacy Policy</a>, and <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>.</p>
 
       <h2>Changes</h2>
       <p>We may update this policy when the product or applicable rules change. The effective date above identifies the latest version.</p>
